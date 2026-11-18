@@ -1,0 +1,96 @@
+{
+ "arm": "off0215-deep",
+ "rounds": 3,
+ "suite": "deep",
+ "ts": "2026-11-18 15:52:06",
+ "meta": {
+  "config": "strata-huihui-v2-v31-ud-iq4-xs-off0215.json",
+  "engine": "0.1.55 (f-029-rel)",
+  "ple_line": "strata generate: PLE on, table 320001536 rows of D:\\models\\strata\\engram-q8\\Qwen3.8-Flash-Next-engram-Q8_0.gguf_file",
+  "window": 6,
+  "gpus": [
+   "0, 24152 MiB, 8475 MiB",
+   "1, 24874 MiB, 7753 MiB",
+   "2, 21991 MiB, 10636 MiB"
+  ],
+  "model": "huihui-v2-v31-ud-iq4-xs-off0215",
+  "max_context": 262144
+ },
+ "deep": {
+  "name": "deep",
+  "rows": [
+   {
+    "label": "deep-r1",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 96784,
+    "read_tokens": 96784,
+    "prefill_ms": 35076,
+    "prefill_tps": 2759.3,
+    "gen_tokens": 139,
+    "gen_ms": 1455,
+    "decode_tps": 95.5,
+    "drafts_accepted": 62,
+    "drafts_total": 88,
+    "suffix_acc": 2,
+    "suffix_tot": 10,
+    "accept_rate": 65.3,
+    "usage_out": 139,
+    "wall": 36.65
+   },
+   {
+    "label": "deep-r2",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 96841,
+    "read_tokens": 96841,
+    "prefill_ms": 34464,
+    "prefill_tps": 2809.9,
+    "gen_tokens": 135,
+    "gen_ms": 1358,
+    "decode_tps": 99.4,
+    "drafts_accepted": 64,
+    "drafts_total": 81,
+    "suffix_acc": 4,
+    "suffix_tot": 10,
+    "accept_rate": 74.7,
+    "usage_out": 135,
+    "wall": 35.96
+   },
+   {
+    "label": "deep-r3",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 96732,
+    "read_tokens": 96732,
+    "prefill_ms": 34593,
+    "prefill_tps": 2796.3,
+    "gen_tokens": 120,
+    "gen_ms": 1224,
+    "decode_tps": 98.0,
+    "drafts_accepted": 62,
+    "drafts_total": 78,
+    "suffix_acc": 5,
+    "suffix_tot": 7,
+    "accept_rate": 78.8,
+    "usage_out": 120,
+    "wall": 35.96
+   }
+  ],
+  "n_good": 3,
+  "decode_vals": [
+   95.5,
+   99.4,
+   98.0
+  ],
+  "prefill_vals": [
+   2759.3,
+   2809.9,
+   2796.3
+  ],
+  "decode_median": 98.0,
+  "prefill_median": 2796.3,
+  "accept_median": 74.7,
+  "prompt_tokens": 96784
+ }
+}

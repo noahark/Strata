@@ -1,0 +1,173 @@
+{
+ "arm": "off0215",
+ "rounds": 3,
+ "suite": "short",
+ "ts": "2026-11-18 14:27:14",
+ "meta": {
+  "config": "strata-huihui-v2-v31-ud-iq4-xs-off0215.json",
+  "engine": "0.1.55 (f-029-rel)",
+  "ple_line": "strata generate: PLE on, table 320001536 rows of D:\\models\\strata\\engram-q8\\Qwen3.8-Flash-Next-engram-Q8_0.gguf_file",
+  "window": 6,
+  "gpus": [
+   "0, 24062 MiB, 8565 MiB",
+   "1, 24772 MiB, 7855 MiB",
+   "2, 21895 MiB, 10732 MiB"
+  ],
+  "model": "huihui-v2-v31-ud-iq4-xs-off0215",
+  "max_context": 262144
+ },
+ "short": {
+  "name": "short",
+  "rows": [
+   {
+    "label": "short-r1",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 86,
+    "read_tokens": 86,
+    "prefill_ms": 554,
+    "prefill_tps": 155.3,
+    "gen_tokens": 320,
+    "gen_ms": 2923,
+    "decode_tps": 109.5,
+    "drafts_accepted": 167,
+    "drafts_total": 215,
+    "suffix_acc": 9,
+    "suffix_tot": 18,
+    "accept_rate": 75.5,
+    "usage_out": 320,
+    "wall": 3.48
+   },
+   {
+    "label": "short-r2",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 87,
+    "read_tokens": 87,
+    "prefill_ms": 549,
+    "prefill_tps": 158.5,
+    "gen_tokens": 320,
+    "gen_ms": 2687,
+    "decode_tps": 119.1,
+    "drafts_accepted": 166,
+    "drafts_total": 207,
+    "suffix_acc": 1,
+    "suffix_tot": 2,
+    "accept_rate": 79.9,
+    "usage_out": 320,
+    "wall": 3.27
+   },
+   {
+    "label": "short-r3",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 85,
+    "read_tokens": 85,
+    "prefill_ms": 540,
+    "prefill_tps": 157.4,
+    "gen_tokens": 320,
+    "gen_ms": 2952,
+    "decode_tps": 108.4,
+    "drafts_accepted": 152,
+    "drafts_total": 190,
+    "suffix_acc": 9,
+    "suffix_tot": 12,
+    "accept_rate": 79.7,
+    "usage_out": 320,
+    "wall": 3.52
+   }
+  ],
+  "n_good": 3,
+  "decode_vals": [
+   109.5,
+   119.1,
+   108.4
+  ],
+  "prefill_vals": [
+   155.3,
+   158.5,
+   157.4
+  ],
+  "decode_median": 109.5,
+  "prefill_median": 157.4,
+  "accept_median": 79.7,
+  "prompt_tokens": 86
+ },
+ "long": {
+  "name": "long",
+  "rows": [
+   {
+    "label": "long-r1",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 11794,
+    "read_tokens": 11794,
+    "prefill_ms": 4877,
+    "prefill_tps": 2418.3,
+    "gen_tokens": 119,
+    "gen_ms": 1102,
+    "decode_tps": 108.0,
+    "drafts_accepted": 60,
+    "drafts_total": 74,
+    "suffix_acc": 2,
+    "suffix_tot": 2,
+    "accept_rate": 81.6,
+    "usage_out": 119,
+    "wall": 6.05
+   },
+   {
+    "label": "long-r2",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 11824,
+    "read_tokens": 11824,
+    "prefill_ms": 4783,
+    "prefill_tps": 2471.9,
+    "gen_tokens": 139,
+    "gen_ms": 1369,
+    "decode_tps": 101.5,
+    "drafts_accepted": 63,
+    "drafts_total": 74,
+    "suffix_acc": 0,
+    "suffix_tot": 0,
+    "accept_rate": 85.1,
+    "usage_out": 139,
+    "wall": 6.22
+   },
+   {
+    "label": "long-r3",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 11734,
+    "read_tokens": 11734,
+    "prefill_ms": 4742,
+    "prefill_tps": 2474.5,
+    "gen_tokens": 116,
+    "gen_ms": 1095,
+    "decode_tps": 105.9,
+    "drafts_accepted": 53,
+    "drafts_total": 72,
+    "suffix_acc": 0,
+    "suffix_tot": 0,
+    "accept_rate": 73.6,
+    "usage_out": 116,
+    "wall": 5.88
+   }
+  ],
+  "n_good": 3,
+  "decode_vals": [
+   108.0,
+   101.5,
+   105.9
+  ],
+  "prefill_vals": [
+   2418.3,
+   2471.9,
+   2474.5
+  ],
+  "decode_median": 105.9,
+  "prefill_median": 2471.9,
+  "accept_median": 81.6,
+  "prompt_tokens": 11794
+ }
+}
