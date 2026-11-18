@@ -1,0 +1,173 @@
+{
+ "arm": "wmma0215",
+ "rounds": 3,
+ "suite": "short",
+ "ts": "2026-11-18 19:05:59",
+ "meta": {
+  "config": "strata-huihui-v2-v31-ud-iq4-xs-wmma0215.json",
+  "engine": "0.1.55 (f-029-rel)",
+  "ple_line": "strata generate: PLE on, table 320001536 rows of D:\\models\\strata\\engram-q8\\Qwen3.8-Flash-Next-engram-Q8_0.gguf_file",
+  "window": 6,
+  "gpus": [
+   "0, 24286 MiB, 8341 MiB",
+   "1, 25008 MiB, 7619 MiB",
+   "2, 22125 MiB, 10502 MiB"
+  ],
+  "model": "huihui-v2-v31-ud-iq4-xs-wmma0215",
+  "max_context": 262144
+ },
+ "short": {
+  "name": "short",
+  "rows": [
+   {
+    "label": "short-r1",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 86,
+    "read_tokens": 86,
+    "prefill_ms": 1205,
+    "prefill_tps": 71.4,
+    "gen_tokens": 320,
+    "gen_ms": 2883,
+    "decode_tps": 111.0,
+    "drafts_accepted": 160,
+    "drafts_total": 214,
+    "suffix_acc": 10,
+    "suffix_tot": 19,
+    "accept_rate": 73.0,
+    "usage_out": 320,
+    "wall": 4.11
+   },
+   {
+    "label": "short-r2",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 87,
+    "read_tokens": 87,
+    "prefill_ms": 1214,
+    "prefill_tps": 71.6,
+    "gen_tokens": 320,
+    "gen_ms": 2556,
+    "decode_tps": 125.2,
+    "drafts_accepted": 175,
+    "drafts_total": 204,
+    "suffix_acc": 5,
+    "suffix_tot": 7,
+    "accept_rate": 85.3,
+    "usage_out": 320,
+    "wall": 3.79
+   },
+   {
+    "label": "short-r3",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 85,
+    "read_tokens": 85,
+    "prefill_ms": 1158,
+    "prefill_tps": 73.4,
+    "gen_tokens": 320,
+    "gen_ms": 2680,
+    "decode_tps": 119.4,
+    "drafts_accepted": 163,
+    "drafts_total": 186,
+    "suffix_acc": 1,
+    "suffix_tot": 5,
+    "accept_rate": 85.9,
+    "usage_out": 320,
+    "wall": 3.87
+   }
+  ],
+  "n_good": 3,
+  "decode_vals": [
+   111.0,
+   125.2,
+   119.4
+  ],
+  "prefill_vals": [
+   71.4,
+   71.6,
+   73.4
+  ],
+  "decode_median": 119.4,
+  "prefill_median": 71.6,
+  "accept_median": 85.3,
+  "prompt_tokens": 86
+ },
+ "long": {
+  "name": "long",
+  "rows": [
+   {
+    "label": "long-r1",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 11794,
+    "read_tokens": 11794,
+    "prefill_ms": 6494,
+    "prefill_tps": 1816.1,
+    "gen_tokens": 118,
+    "gen_ms": 1119,
+    "decode_tps": 105.5,
+    "drafts_accepted": 62,
+    "drafts_total": 75,
+    "suffix_acc": 2,
+    "suffix_tot": 2,
+    "accept_rate": 83.1,
+    "usage_out": 118,
+    "wall": 7.69
+   },
+   {
+    "label": "long-r2",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 11824,
+    "read_tokens": 11824,
+    "prefill_ms": 6456,
+    "prefill_tps": 1831.4,
+    "gen_tokens": 138,
+    "gen_ms": 1262,
+    "decode_tps": 109.3,
+    "drafts_accepted": 70,
+    "drafts_total": 83,
+    "suffix_acc": 0,
+    "suffix_tot": 0,
+    "accept_rate": 84.3,
+    "usage_out": 138,
+    "wall": 7.77
+   },
+   {
+    "label": "long-r3",
+    "ok": true,
+    "reused": 0,
+    "prompt_tokens": 11734,
+    "read_tokens": 11734,
+    "prefill_ms": 6341,
+    "prefill_tps": 1850.6,
+    "gen_tokens": 116,
+    "gen_ms": 1106,
+    "decode_tps": 104.9,
+    "drafts_accepted": 53,
+    "drafts_total": 73,
+    "suffix_acc": 0,
+    "suffix_tot": 0,
+    "accept_rate": 72.6,
+    "usage_out": 116,
+    "wall": 7.51
+   }
+  ],
+  "n_good": 3,
+  "decode_vals": [
+   105.5,
+   109.3,
+   104.9
+  ],
+  "prefill_vals": [
+   1816.1,
+   1831.4,
+   1850.6
+  ],
+  "decode_median": 105.5,
+  "prefill_median": 1831.4,
+  "accept_median": 83.1,
+  "prompt_tokens": 11794
+ }
+}

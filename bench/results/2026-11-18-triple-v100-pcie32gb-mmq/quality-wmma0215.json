@@ -1,0 +1,89 @@
+{
+ "label": "wmma0215",
+ "model": "huihui-v2-v31-ud-iq4-xs-wmma0215",
+ "when": "2026-11-18 19:04:22",
+ "probes": [
+  {
+   "id": "mul3x3",
+   "grader": "eq:527681",
+   "ok": true,
+   "secs": 2.55,
+   "tokens": 170,
+   "answer": "527681"
+  },
+  {
+   "id": "squares",
+   "grader": "seq:1,4,9,16,25,36,49,64,81,100,121,144",
+   "ok": true,
+   "secs": 2.64,
+   "tokens": 203,
+   "answer": "1,4,9,16,25,36,49,64,81,100,121,144"
+  },
+  {
+   "id": "maxnum",
+   "grader": "eq:91",
+   "ok": true,
+   "secs": 1.67,
+   "tokens": 67,
+   "answer": "91"
+  },
+  {
+   "id": "prime",
+   "grader": "contains:def is_prime",
+   "ok": true,
+   "secs": 2.54,
+   "tokens": 180,
+   "answer": "def is_prime(n):\n    if n <= 1:\n        return False\n    if n <= 3:\n        return True\n    if n % 2 == 0 or n % 3 == 0:\n        return False\n    i = 5\n    while i * i <= n:\n        if n % i == 0 or n % (i + 2) == 0:\n            return False\n        i += 6\n    return True"
+  },
+  {
+   "id": "needle",
+   "grader": "eq:FNX-8842-QK",
+   "ok": true,
+   "secs": 1.84,
+   "tokens": 67,
+   "answer": "FNX-8842-QK"
+  },
+  {
+   "id": "count",
+   "grader": "count:30",
+   "ok": false,
+   "secs": 4.69,
+   "tokens": 400,
+   "answer": ""
+  },
+  {
+   "id": "chain",
+   "grader": "eq:17",
+   "ok": true,
+   "secs": 1.62,
+   "tokens": 73,
+   "answer": "17"
+  },
+  {
+   "id": "pow3_40",
+   "grader": "eq:12157665459056928801",
+   "ok": true,
+   "secs": 3.18,
+   "tokens": 292,
+   "answer": "12157665459056928801"
+  },
+  {
+   "id": "bigmul",
+   "grader": "eq:121932631112635269",
+   "ok": false,
+   "secs": 3.52,
+   "tokens": 400,
+   "answer": ""
+  },
+  {
+   "id": "recur",
+   "grader": "eq:-49198",
+   "ok": false,
+   "secs": 3.95,
+   "tokens": 396,
+   "answer": "-49204"
+  }
+ ],
+ "graded": 10,
+ "passed": 7
+}
